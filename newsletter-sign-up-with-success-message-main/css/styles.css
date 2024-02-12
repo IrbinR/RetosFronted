@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    
+}
+
+main {
+    width: 350px;
+    min-width: 350px;
+
+}
+
+.photo {
+    background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17rem;
+}
+
+.suscription { 
+    padding: 1.4rem;
+    line-height: 1.5;
+}
+
+.suscription__title {
+    font-size: 2rem;
+}
+
+.suscription__text {
+    margin: 1rem 0;
+}
+.suscription__list{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.suscription__list span {
+  padding-left: 1rem;
+}
+ 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+input[type="email"] {
+    height: 3rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 6px;
+    padding-left: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+input[type="submit"] {
+    border: 0;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    height: 3rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg,hsl(342, 77%, 58%) 0%, hsl(4, 100%, 67%) 100%);
+}
+
+@media (min-width: 576px) {
+    main {
+        width: 500px
+    }
+
+    .photo {
+        height: 24rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 700px;
+    }
+
+    .photo {
+        height: 34rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(235, 18%, 26%);
+        font-size: 0.9rem;
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 780px;
+        height: 520px;
+        padding: 1rem 1rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1.5rem;
+        overflow: hidden;
+
+    }
+
+    .photo {
+        background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+        width: 22rem;
+        background-position: center;
+    }
+
+    .suscription__title {
+        font-size: 3.2rem;
+    }
+    
+    .suscription__text {
+        /*margin: 0.2rem 0;*/
+        margin: initial;
+    }
+
+    .suscription__lists {
+        margin: 1.2rem 0;
+    }
+
+    .suscription__list{ 
+        margin-bottom: 0.5rem;
+    }
+ 
+
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding-left: 1.5rem;
+        /*height: 31rem;*/
+        width: 809px;
+    }
+
+    .suscription {
+        margin-right: 1.8rem;
+    }
+
+    
+}
+
+
+
+
